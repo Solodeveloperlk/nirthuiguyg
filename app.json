@@ -1,0 +1,27 @@
+{
+  "name": "CHAMI-MD",
+  "description": "Javascript WhatsApp bot made by Manul Official",
+  "logo": "https://telegra.ph/file/ef48cc8d2d26081f7d46a.jpg",
+  "keywords": ["bot"],
+  "success_url": "/",
+
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here.",
+      "required": true
+    },  
+
+    "env": {
+    "AUTO_READ_STATUS": {
+      "description": "Put the true or false here.",
+      "required": true
+    }
+},
+
+     "buildpacks": [
+        {
+            "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+        }
+     ],
+  "stack": "heroku-24"
+}
